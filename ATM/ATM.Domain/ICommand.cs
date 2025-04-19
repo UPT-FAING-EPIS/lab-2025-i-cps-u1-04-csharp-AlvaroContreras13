@@ -1,9 +1,13 @@
 namespace ATM.Domain
 {
-    // Command Interface
-    // It declares a method for executing a command
+    /// <summary>
+    /// Interfaz que define un comando que puede ser ejecutado.
+    /// </summary>
     public interface ICommand
     {
+        /// <summary>
+        /// Ejecuta el comando.
+        /// </summary>
         void Execute();
     }
 }
