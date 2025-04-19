@@ -1,0 +1,8 @@
+C:\patrones\lab4\Payment\Payment.Domain.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_Payment.Domain.Tests
+C:\patrones\lab4\Payment\Payment.Domain.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_Payment.Domain.Tests
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.csproj.AssemblyReference.cache
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.AssemblyInfoInputs.cache
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.AssemblyInfo.cs
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.csproj.CoreCompileInputs.cache
+C:\patrones\lab4\Payment\Payment.Domain.Tests\obj\Debug\net9.0\Payment.Domain.Tests.sourcelink.json
