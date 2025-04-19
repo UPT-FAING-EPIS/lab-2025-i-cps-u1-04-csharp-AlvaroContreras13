@@ -1,0 +1,8 @@
+C:\patrones\lab4\ATM\ATM.Domain.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_ATM.Domain.Tests
+C:\patrones\lab4\ATM\ATM.Domain.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_ATM.Domain.Tests
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.csproj.AssemblyReference.cache
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.AssemblyInfoInputs.cache
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.AssemblyInfo.cs
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.csproj.CoreCompileInputs.cache
+C:\patrones\lab4\ATM\ATM.Domain.Tests\obj\Debug\net9.0\ATM.Domain.Tests.sourcelink.json
