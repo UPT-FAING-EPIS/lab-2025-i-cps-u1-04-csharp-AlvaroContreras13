@@ -1,0 +1,288 @@
+{
+  "source_base_path": "/home/runner/work/lab-2025-i-cps-u1-04-csharp-AlvaroContreras13/lab-2025-i-cps-u1-04-csharp-AlvaroContreras13",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ATM/disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "ATM/disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Payment/disenio.md",
+      "output": {
+        ".html": {
+          "relative_path": "Payment/disenio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ATM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ATM.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ATM",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.ATM.yml\" sourcestartlinenumber=\"1\">Representa el sistema de cajero automático que ejecuta comandos sobre una cuenta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.Account.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.Account",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.Account.yml\" sourcestartlinenumber=\"1\">Representa una cuenta bancaria con balance y operaciones de depósito y retiro.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.DepositCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.DepositCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.DepositCommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.DepositCommand.yml\" sourcestartlinenumber=\"1\">Representa un comando para depositar una cantidad en una cuenta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.ICommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.ICommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.ICommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.ICommand.yml\" sourcestartlinenumber=\"1\">Interfaz que define un comando que puede ser ejecutado.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.WithdrawCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.WithdrawCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain.WithdrawCommand",
+      "Summary": "<p sourcefile=\"api/ATM.Domain.WithdrawCommand.yml\" sourcestartlinenumber=\"1\">Representa un comando para retirar una cantidad de una cuenta.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ATM.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ATM.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "ATM.Domain",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CashPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CashPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CashPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.CashPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementa una estrategia de pago en efectivo.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.CreditCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.CreditCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.CreditCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementa una estrategia de pago mediante tarjeta de crédito.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.DebitCardPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.DebitCardPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.DebitCardPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Implementa una estrategia de pago mediante tarjeta de débito.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.IPaymentStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.IPaymentStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.IPaymentStrategy",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.IPaymentStrategy.yml\" sourcestartlinenumber=\"1\">Interfaz que define el contrato para las estrategias de pago.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentContext",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentContext.yml\" sourcestartlinenumber=\"1\">Clase Contexto que utiliza una estrategia de pago concreta para realizar pagos.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentService",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentService.yml\" sourcestartlinenumber=\"1\">Clase que procesa los pagos utilizando diferentes estrategias de pago.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.PaymentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.PaymentType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain.PaymentType",
+      "Summary": "<p sourcefile=\"api/Payment.Domain.PaymentType.yml\" sourcestartlinenumber=\"1\">Enumeración que define los tipos de pago disponibles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Payment.Domain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Payment.Domain.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Payment.Domain",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

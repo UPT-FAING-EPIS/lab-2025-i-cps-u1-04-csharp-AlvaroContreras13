@@ -1,0 +1,49 @@
+name: 📚 Generar y Publicar Documentación DocFX
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docfx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: 🧰 Configurar .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Instalar DocFX globalmente
+        run: dotnet tool update -g docfx
+
+      - name: 🛠 Generar documentación y publicar en GitHub Pages
+        run: |
+          export PATH="$PATH:$HOME/.dotnet/tools"
+
+          # Generar metadatos y documentación
+          docfx metadata docfx.json
+          docfx build docfx.json
+
+          # Guardar temporalmente la carpeta _site
+          mv _site ../_site_temp
+
+          # Cambiar a rama gh-pages
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git fetch origin
+          git switch gh-pages || git checkout --orphan gh-pages
+
+          # Borrar todo y copiar documentación generada
+          rm -rf *
+          cp -r ../_site_temp/* .
+          touch .nojekyll
+
+          # Publicar
+          git add .
+          git commit -m "📚 Publicar documentación DocFX" || echo "Sin cambios que commitear"
+          git push origin gh-pages --force
