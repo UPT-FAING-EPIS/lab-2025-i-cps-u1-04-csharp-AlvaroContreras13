@@ -39,15 +39,14 @@ jobs:
       # ========================
       - name: 🧪 Test y cobertura - ATM
         run: |
-          dotnet test ATM/ATM.Application/ATM.Application.csproj --collect:"XPlat Code Coverage"
+          dotnet test ATM/ATM.Domain/ATM.Domain.csproj --collect:"XPlat Code Coverage"
           reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:ATM_Coverage" -reporttypes:Html
-
       # ========================
       # 🔹 Pruebas y cobertura - Payment
       # ========================
       - name: 🧪 Test y cobertura - Payment
         run: |
-          dotnet test Payment/Payment.Application/Payment.Application.csproj --collect:"XPlat Code Coverage"
+          dotnet test Payment/Payment.Domain/Payment.Domain.csproj --collect:"XPlat Code Coverage"
           reportgenerator "-reports:**/coverage.cobertura.xml" "-targetdir:Payment_Coverage" -reporttypes:Html
 
       # ========================
