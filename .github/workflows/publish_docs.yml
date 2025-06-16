@@ -19,20 +19,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: 📦 Instalar DocFX globalmente
-        run: |
-          dotnet tool update -g docfx
-        env:
-          DOTNET_ROOT: ${{ runner.tool_cache }}/dotnet
+        run: dotnet tool update -g docfx
 
       - name: 🛠 Generar metadatos y documentación con DocFX
         run: |
           export PATH="$PATH:$HOME/.dotnet/tools"
           docfx metadata docfx.json
           docfx build docfx.json
-
-      - name: 📂 Guardar documentación generada
-        run: |
-          mv _site site-temp
 
       - name: 🚀 Publicar en GitHub Pages (branch gh-pages)
         run: |
@@ -42,7 +35,7 @@ jobs:
           git fetch origin
           git switch gh-pages || git checkout --orphan gh-pages
           rm -rf *
-          cp -r ../site-temp/* .
+          cp -r _site/* .
           touch .nojekyll
           git add .
           git commit -m "📚 Publicar documentación DocFX" || echo "Sin cambios que commitear"
