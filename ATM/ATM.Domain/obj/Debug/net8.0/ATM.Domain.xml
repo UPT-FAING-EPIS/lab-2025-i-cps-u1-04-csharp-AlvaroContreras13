@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ATM.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:ATM.Domain.Account">
+            <summary>
+            Representa una cuenta bancaria con balance y operaciones de depósito y retiro.
+            </summary>
+        </member>
+        <member name="F:ATM.Domain.Account.MAX_INPUT_AMOUNT">
+            <summary>
+            El monto máximo permitido para un depósito.
+            </summary>
+        </member>
+        <member name="P:ATM.Domain.Account.AccountNumber">
+            <summary>
+            Número de la cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:ATM.Domain.Account.AccountBalance">
+            <summary>
+            El saldo actual de la cuenta bancaria.
+            </summary>
+        </member>
+        <member name="M:ATM.Domain.Account.Withdraw(System.Decimal)">
+            <summary>
+            Realiza un retiro de una cantidad específica de la cuenta.
+            </summary>
+            <param name="amount">La cantidad a retirar.</param>
+            <exception cref="T:System.ArgumentException">Lanzada si el monto es mayor que el saldo disponible en la cuenta.</exception>
+        </member>
+        <member name="M:ATM.Domain.Account.Deposit(System.Decimal)">
+            <summary>
+            Realiza un depósito de una cantidad específica en la cuenta.
+            </summary>
+            <param name="amount">La cantidad a depositar.</param>
+            <exception cref="T:System.ArgumentException">Lanzada si el monto excede el máximo permitido para un depósito.</exception>
+        </member>
+        <member name="T:ATM.Domain.ATM">
+            <summary>
+            Representa el sistema de cajero automático que ejecuta comandos sobre una cuenta.
+            </summary>
+        </member>
+        <member name="F:ATM.Domain.ATM._command">
+            <summary>
+            El comando que se ejecutará en el cajero automático.
+            </summary>
+        </member>
+        <member name="M:ATM.Domain.ATM.#ctor(ATM.Domain.ICommand)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:ATM.Domain.ATM"/> con un comando específico.
+            </summary>
+            <param name="command">El comando que el cajero automático ejecutará.</param>
+        </member>
+        <member name="M:ATM.Domain.ATM.Action">
+            <summary>
+            Ejecuta el comando asociado al cajero automático.
+            </summary>
+        </member>
+        <member name="T:ATM.Domain.DepositCommand">
+            <summary>
+            Representa un comando para depositar una cantidad en una cuenta.
+            </summary>
+        </member>
+        <member name="F:ATM.Domain.DepositCommand._account">
+            <summary>
+            La cuenta en la que se realizará el depósito.
+            </summary>
+        </member>
+        <member name="F:ATM.Domain.DepositCommand._amount">
+            <summary>
+            La cantidad que se va a depositar en la cuenta.
+            </summary>
+        </member>
+        <member name="M:ATM.Domain.DepositCommand.#ctor(ATM.Domain.Account,System.Decimal)">
+            <summary>
+            Inicializa una nueva instancia del comando <see cref="T:ATM.Domain.DepositCommand"/> con la cuenta y la cantidad a depositar.
+            </summary>
+            <param name="account">La cuenta donde se realizará el depósito.</param>
+            <param name="amount">La cantidad que se va a depositar.</param>
+        </member>
+        <member name="M:ATM.Domain.DepositCommand.Execute">
+            <summary>
+            Ejecuta el comando de depósito en la cuenta.
+            </summary>
+        </member>
+        <member name="T:ATM.Domain.ICommand">
+            <summary>
+            Interfaz que define un comando que puede ser ejecutado.
+            </summary>
+        </member>
+        <member name="M:ATM.Domain.ICommand.Execute">
+            <summary>
+            Ejecuta el comando.
+            </summary>
+        </member>
+        <member name="T:ATM.Domain.WithdrawCommand">
+            <summary>
+            Representa un comando para retirar una cantidad de una cuenta.
+            </summary>
+        </member>
+        <member name="M:ATM.Domain.WithdrawCommand.#ctor(ATM.Domain.Account,System.Decimal)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:ATM.Domain.WithdrawCommand"/>.
+            </summary>
+            <param name="account">La cuenta desde la cual se realizará el retiro.</param>
+            <param name="amount">La cantidad que se desea retirar.</param>
+        </member>
+        <member name="M:ATM.Domain.WithdrawCommand.Execute">
+            <summary>
+            Ejecuta el comando de retiro en la cuenta especificada.
+            </summary>
+        </member>
+    </members>
+</doc>

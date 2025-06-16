@@ -10,3 +10,17 @@ C:\patrones\lab4\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.dll
 C:\patrones\lab4\ATM\ATM.Domain\obj\Debug\net8.0\refint\ATM.Domain.dll
 C:\patrones\lab4\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.pdb
 C:\patrones\lab4\ATM\ATM.Domain\obj\Debug\net8.0\ref\ATM.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.deps.json
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.pdb
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\bin\Debug\net8.0\ATM.Domain.xml
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.AssemblyInfoInputs.cache
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.AssemblyInfo.cs
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.csproj.CoreCompileInputs.cache
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.sourcelink.json
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\refint\ATM.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.xml
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ATM.Domain.pdb
+D:\upt2025\patrones\labs\lab4u1\ATM\ATM.Domain\obj\Debug\net8.0\ref\ATM.Domain.dll

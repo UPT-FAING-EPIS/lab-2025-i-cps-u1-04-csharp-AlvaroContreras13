@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\patrones\\lab4\\Payment\\Payment.Domain\\Payment.Domain.csproj": {}
+    "D:\\upt2025\\patrones\\labs\\lab4u1\\Payment\\Payment.Domain\\Payment.Domain.csproj": {}
   },
   "projects": {
-    "C:\\patrones\\lab4\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+    "D:\\upt2025\\patrones\\labs\\lab4u1\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\patrones\\lab4\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "projectUniqueName": "D:\\upt2025\\patrones\\labs\\lab4u1\\Payment\\Payment.Domain\\Payment.Domain.csproj",
         "projectName": "Payment.Domain",
-        "projectPath": "C:\\patrones\\lab4\\Payment\\Payment.Domain\\Payment.Domain.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\patrones\\lab4\\Payment\\Payment.Domain\\obj\\",
+        "projectPath": "D:\\upt2025\\patrones\\labs\\lab4u1\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+        "packagesPath": "C:\\Users\\ALVARO\\.nuget\\packages\\",
+        "outputPath": "D:\\upt2025\\patrones\\labs\\lab4u1\\Payment\\Payment.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ALVARO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +41,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

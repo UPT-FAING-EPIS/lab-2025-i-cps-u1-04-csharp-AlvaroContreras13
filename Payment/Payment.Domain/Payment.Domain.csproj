@@ -4,6 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- Habilitar archivo XML para documentación -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Opcional: silenciar advertencias por falta de comentarios -->
+    <NoWarn>1591</NoWarn>
   </PropertyGroup>
 
 </Project>

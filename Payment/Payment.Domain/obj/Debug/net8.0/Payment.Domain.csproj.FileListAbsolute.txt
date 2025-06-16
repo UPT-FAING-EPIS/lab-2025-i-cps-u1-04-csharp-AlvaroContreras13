@@ -10,3 +10,17 @@ C:\patrones\lab4\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.dll
 C:\patrones\lab4\Payment\Payment.Domain\obj\Debug\net8.0\refint\Payment.Domain.dll
 C:\patrones\lab4\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.pdb
 C:\patrones\lab4\Payment\Payment.Domain\obj\Debug\net8.0\ref\Payment.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.deps.json
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.pdb
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\bin\Debug\net8.0\Payment.Domain.xml
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfoInputs.cache
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.AssemblyInfo.cs
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.csproj.CoreCompileInputs.cache
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.sourcelink.json
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\refint\Payment.Domain.dll
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.xml
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\Payment.Domain.pdb
+D:\upt2025\patrones\labs\lab4u1\Payment\Payment.Domain\obj\Debug\net8.0\ref\Payment.Domain.dll

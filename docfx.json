@@ -1,46 +1,41 @@
 {
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
   "metadata": [
-    {
-      "src": [
-        {
-          "src": "../ATM/ATM.csproj;Payment/Payment.csproj",
-          "files": [
-            "**/*.csproj"
-          ]
-        }
-      ],
-      "dest": "api"
-    }
-  ],
+  {
+    "src": {
+      "files": [
+        "ATM/ATM.Domain/ATM.Domain.csproj",
+        "Payment/Payment.Domain/Payment.Domain.csproj"
+      ]
+    },
+    "dest": "api"
+  }
+],
+
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
+        "files": [ "**/*.md", "api/**.yml" ]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": [ "images/**" ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [ "**/*.overwrite.md" ]
       }
     ],
     "output": "_site",
+    "globalMetadata": {
+      "_appTitle": "Documentación de lab4u1",
+      "_enableSearch": true
+    },
     "template": [
       "default",
       "modern"
-    ],
-    "globalMetadata": {
-      "_appName": "lab4u1-docs",
-      "_appTitle": "lab4u1-docs",
-      "_enableSearch": true,
-      "pdf": true
-    }
+    ]
   }
 }

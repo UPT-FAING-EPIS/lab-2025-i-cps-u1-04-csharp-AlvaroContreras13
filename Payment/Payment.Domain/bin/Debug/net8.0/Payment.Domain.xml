@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Payment.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Payment.Domain.CashPaymentStrategy">
+            <summary>
+            Implementa una estrategia de pago en efectivo.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.CashPaymentStrategy.Pay(System.Double)">
+            <summary>
+            Realiza el pago utilizando efectivo.
+            </summary>
+            <param name="amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue exitoso.</returns>
+        </member>
+        <member name="T:Payment.Domain.CreditCardPaymentStrategy">
+            <summary>
+            Implementa una estrategia de pago mediante tarjeta de crédito.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.CreditCardPaymentStrategy.Pay(System.Double)">
+            <summary>
+            Realiza el pago utilizando una tarjeta de crédito.
+            </summary>
+            <param name="amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue exitoso.</returns>
+        </member>
+        <member name="T:Payment.Domain.DebitCardPaymentStrategy">
+            <summary>
+            Implementa una estrategia de pago mediante tarjeta de débito.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.DebitCardPaymentStrategy.Pay(System.Double)">
+            <summary>
+            Realiza el pago utilizando una tarjeta de débito.
+            </summary>
+            <param name="amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue exitoso.</returns>
+        </member>
+        <member name="T:Payment.Domain.IPaymentStrategy">
+            <summary>
+            Interfaz que define el contrato para las estrategias de pago.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.IPaymentStrategy.Pay(System.Double)">
+            <summary>
+            Realiza un pago con el monto especificado.
+            </summary>
+            <param name="amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue exitoso.</returns>
+        </member>
+        <member name="T:Payment.Domain.PaymentContext">
+            <summary>
+            Clase Contexto que utiliza una estrategia de pago concreta para realizar pagos.
+            </summary>
+        </member>
+        <member name="F:Payment.Domain.PaymentContext.PaymentStrategy">
+            <summary>
+            La clase Contexto tiene una referencia al objeto de estrategia.
+            El Contexto no conoce la clase concreta de una estrategia.
+            Debe trabajar con todas las estrategias a través de la interfaz IPaymentStrategy.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.PaymentContext.SetPaymentStrategy(Payment.Domain.IPaymentStrategy)">
+            <summary>
+            Método para establecer la estrategia de pago a utilizar en tiempo de ejecución.
+            El Cliente puede cambiar la estrategia de pago llamando a este método.
+            </summary>
+            <param name="strategy">La estrategia de pago que se desea usar.</param>
+        </member>
+        <member name="M:Payment.Domain.PaymentContext.Pay(System.Double)">
+            <summary>
+            El contexto delega el trabajo al objeto de estrategia en lugar de implementar
+            múltiples versiones del algoritmo por su cuenta.
+            </summary>
+            <param name="amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue exitoso.</returns>
+        </member>
+        <member name="T:Payment.Domain.PaymentService">
+            <summary>
+            Clase que procesa los pagos utilizando diferentes estrategias de pago.
+            </summary>
+        </member>
+        <member name="M:Payment.Domain.PaymentService.ProcessPayment(System.Int32,System.Double)">
+            <summary>
+            Procesa el pago seleccionando la estrategia de pago adecuada según el tipo de pago seleccionado.
+            </summary>
+            <param name="SelectedPaymentType">El tipo de pago seleccionado, que puede ser un valor de la enumeración <see cref="T:Payment.Domain.PaymentType"/>.</param>
+            <param name="Amount">El monto a pagar.</param>
+            <returns>Devuelve <c>true</c> si el pago fue procesado correctamente, de lo contrario lanza una excepción.</returns>
+            <exception cref="T:System.ArgumentException">Se lanza si el tipo de pago seleccionado no es válido.</exception>
+        </member>
+        <member name="T:Payment.Domain.PaymentType">
+            <summary>
+            Enumeración que define los tipos de pago disponibles.
+            </summary>
+        </member>
+        <member name="F:Payment.Domain.PaymentType.CreditCard">
+            <summary>
+            Tipo de pago con tarjeta de crédito (valor 1).
+            </summary>
+        </member>
+        <member name="F:Payment.Domain.PaymentType.DebitCard">
+            <summary>
+            Tipo de pago con tarjeta de débito (valor 2).
+            </summary>
+        </member>
+        <member name="F:Payment.Domain.PaymentType.Cash">
+            <summary>
+            Tipo de pago en efectivo (valor 3).
+            </summary>
+        </member>
+    </members>
+</doc>
