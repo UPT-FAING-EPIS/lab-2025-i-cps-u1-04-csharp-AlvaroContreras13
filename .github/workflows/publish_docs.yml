@@ -1,0 +1,54 @@
+name: 📘 Generar y Publicar Documentación en GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🔄 Checkout del código
+      uses: actions/checkout@v4
+
+    - name: 🧰 Setup .NET SDK
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: 📦 Instalar DocFX
+      run: dotnet tool install --global docfx
+
+    - name: 🏗️ Generar metadata y construir documentación
+      run: |
+        cd docs
+        docfx metadata
+        docfx build
+
+    - name: ⚙️ Configurar Git para despliegue
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
+    - name: 🚀 Desplegar en GitHub Pages (gh-pages)
+      run: |
+        mkdir gh-pages-temp
+        cp -r docs/_site/* gh-pages-temp/
+
+        git fetch origin
+        git checkout --orphan gh-pages
+        git reset
+        rm -rf *
+
+        mv gh-pages-temp/* .
+        rm -rf gh-pages-temp
+
+        touch .nojekyll
+        git add .
+        git commit -m "🚀 Publicar documentación DocFX"
+        git push origin gh-pages --force
